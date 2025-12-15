@@ -18,7 +18,7 @@ export default function PlayerSetup({ onPlayerSet }) {
     setError('');
 
     try {
-      const response = await fetch('http://localhost:3001/api/players', {
+      const response = await fetch('http://localhost:3000/api/players', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name: name.trim() })
